@@ -32,6 +32,20 @@
 #   Hash of php::fpm::pool resources that will be created. Defaults
 #   to a single php::fpm::pool named www with default parameters.
 #
+# [*fpm_pool_dir*]
+#   The folder that contains the php-fpm pool configs
+#
+# [*fpm_pool_purge*]
+#   Whether to purge pool config files not created
+#   by this module
+#
+# [*fpm_config_file*]
+#   The path to the fpm config file
+#
+# [*fpm_error_log*]
+#   Path to the fpm error log file. If it's set to "syslog", log is
+#   sent to syslogd instead of being written in a local file.
+#
 # [*fpm_global_pool_settings*]
 #   Hash of defaults params php::fpm::pool resources that will be created.
 #   Defaults to empty hash.
