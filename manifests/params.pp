@@ -5,6 +5,7 @@ class php::params inherits php::globals {
   $ensure              = 'present'
   $fpm_service_enable  = true
   $fpm_service_ensure  = 'running'
+  $fpm_pool_purge      = false
   $composer_source     = 'https://getcomposer.org/composer.phar'
   $composer_path       = '/usr/local/bin/composer'
   $composer_max_age    = 30

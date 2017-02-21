@@ -78,7 +78,7 @@ class php::fpm::config(
   $pid_file                    = $::php::params::fpm_pid_file,
   $settings                    = {},
   $pool_base_dir               = $::php::params::fpm_pool_dir,
-  $pool_purge                  = false,
+  $pool_purge                  = $::php::params::fpm_pool_purge,
   $error_log                   = $::php::params::fpm_error_log,
   $log_level                   = 'notice',
   $emergency_restart_threshold = '0',
